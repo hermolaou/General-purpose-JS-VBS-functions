@@ -2,7 +2,13 @@
 Doxa soi, Kyrie, doxa soi.
 */
 
-var queries = [];	//queue
+var queries = [];	//queries queue, очередь запросов
+
+/*
+Асинхронный sql-запрос.
+	conn - подключение, при готовности вызывает OnCompletion с параметрами: RecordSet с результатами и запрос.
+Asynchronous Sql query.
+	conn-connection, on completion calls OnCompletion with resulting recordset and the original query. */
 
 function SqlAsync(q, OnCompletion)
 {
