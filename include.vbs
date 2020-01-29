@@ -4,7 +4,7 @@
 
 Randomize
 
-'Класс для работы с вкладками
+'РљР»Р°СЃСЃ РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ РІРєР»Р°РґРєР°РјРё
 'a class for tabbed interface
 
 Class Tabs
@@ -124,10 +124,10 @@ End Function
 
 '====================================================================
 
-'функции для html 
+'С„СѓРЅРєС†РёРё РґР»СЏ html 
 '/* html functions */
 
-' Задаёт для набора элементов, чтобы при двойном щелчке вызывалось Clickable_OnDblClick
+' Р—Р°РґР°С‘С‚ РґР»СЏ РЅР°Р±РѕСЂР° СЌР»РµРјРµРЅС‚РѕРІ, С‡С‚РѕР±С‹ РїСЂРё РґРІРѕР№РЅРѕРј С‰РµР»С‡РєРµ РІС‹Р·С‹РІР°Р»РѕСЃСЊ Clickable_OnDblClick
 ' Sets for an array of elements that Clickable_OnDblClick is invoked on double click
 function AllowClickingWords (elementsArray)
 	Const onDblClickCommand = "Clickable_OnDblClick(window.getSelection())"
@@ -142,11 +142,10 @@ function AllowClickingWords (elementsArray)
 	End If
 end Function
 
-' получает доступ к подчинённым элементам div - делает их доступными как глобальные переменные с именами взятыми от классов 
+' РїРѕР»СѓС‡Р°РµС‚ РґРѕСЃС‚СѓРї Рє РїРѕРґС‡РёРЅС‘РЅРЅС‹Рј СЌР»РµРјРµРЅС‚Р°Рј div - РґРµР»Р°РµС‚ РёС… РґРѕСЃС‚СѓРїРЅС‹РјРё РєР°Рє РіР»РѕР±Р°Р»СЊРЅС‹Рµ РїРµСЂРµРјРµРЅРЅС‹Рµ СЃ РёРјРµРЅР°РјРё РІР·СЏС‚С‹РјРё РѕС‚ РєР»Р°СЃСЃРѕРІ 
 ' lets access div child elements as global variables with names taken from their classes
 Function GetAccessToHtml(div)
 
-'	echo "GATH ", div.id
 	If Not(IsObject(div)) Then Set div=document.getElementById(div)
 	For Each child In div.children
 		'If instr(child.id, "_") Then
@@ -223,7 +222,7 @@ Function newdict()
 End Function
 
 
-'поддержка файла настроек. Создаёт подключаемый vbs-файл который задаёт переменные
+'РїРѕРґРґРµСЂР¶РєР° С„Р°Р№Р»Р° РЅР°СЃС‚СЂРѕРµРє. РЎРѕР·РґР°С‘С‚ РїРѕРґРєР»СЋС‡Р°РµРјС‹Р№ vbs-С„Р°Р№Р» РєРѕС‚РѕСЂС‹Р№ Р·Р°РґР°С‘С‚ РїРµСЂРµРјРµРЅРЅС‹Рµ
 'settings file support. It creates a vbs script that sets variables.
 
 If Len(settingsFile)=0 Then
@@ -281,7 +280,7 @@ Function SaveSetting(name, key, value)
 End Function
 
 '=================================================
-'Проверка подключения к интернету.
+'РџСЂРѕРІРµСЂРєР° РїРѕРґРєР»СЋС‡РµРЅРёСЏ Рє РёРЅС‚РµСЂРЅРµС‚Сѓ.
 'Checks if there is a connected network adapter.
 '=================================================
 Function CheckInternet()
