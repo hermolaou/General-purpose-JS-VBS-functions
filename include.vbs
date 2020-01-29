@@ -1,5 +1,5 @@
 '
-' Gloria in excelsis Dei, et in terra pax, hominibus bonae voluntatis.
+' Gloria in excelsis Deo, et in terra pax, hominibus bonae voluntatis.
 '
 
 Randomize
