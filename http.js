@@ -1,5 +1,5 @@
 /*
-All for the glory of God...
+ Gloria in excelsis Dei, et in terra pax, hominibus bonae voluntatis.
 */
 
 
